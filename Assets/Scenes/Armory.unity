@@ -1555,13 +1555,14 @@ GameObject:
   - component: {fileID: 215083010}
   - component: {fileID: 215083009}
   - component: {fileID: 215083008}
+  - component: {fileID: 215083011}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Armory Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &215083008
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1626,6 +1627,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -218.103, z: 0}
+--- !u!114 &215083011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215083007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2d329409692c040b9f2ff650341f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &283443380
 Mesh:
   m_ObjectHideFlags: 0

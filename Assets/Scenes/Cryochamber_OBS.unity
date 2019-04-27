@@ -12376,13 +12376,14 @@ GameObject:
   - component: {fileID: 1450084018}
   - component: {fileID: 1450084017}
   - component: {fileID: 1450084016}
+  - component: {fileID: 1450084019}
   m_Layer: 0
-  m_Name: Camera (3)
+  m_Name: Terminal Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1450084016
 AudioListener:
   m_ObjectHideFlags: 0
@@ -12447,6 +12448,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 46.123, y: -90.16701, z: 0.016}
+--- !u!114 &1450084019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450084015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2d329409692c040b9f2ff650341f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1601533538
 Mesh:
   m_ObjectHideFlags: 0
@@ -12934,8 +12947,9 @@ GameObject:
   - component: {fileID: 1631463037}
   - component: {fileID: 1631463036}
   - component: {fileID: 1631463035}
+  - component: {fileID: 1631463038}
   m_Layer: 0
-  m_Name: Camera (2)
+  m_Name: OBS Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13005,6 +13019,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!114 &1631463038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631463034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2d329409692c040b9f2ff650341f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1699740281
 Mesh:
   m_ObjectHideFlags: 0

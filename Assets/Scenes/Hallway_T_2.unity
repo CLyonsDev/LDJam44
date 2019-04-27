@@ -7792,8 +7792,9 @@ GameObject:
   - component: {fileID: 798750000}
   - component: {fileID: 798749999}
   - component: {fileID: 798749998}
+  - component: {fileID: 798750001}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Hallway_T_2_Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7863,6 +7864,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -12.262001, y: 50.008003, z: -0.317}
+--- !u!114 &798750001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798749997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2d329409692c040b9f2ff650341f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &800272231
 GameObject:
   m_ObjectHideFlags: 0
@@ -36610,8 +36623,9 @@ GameObject:
   - component: {fileID: 1508150470}
   - component: {fileID: 1508150469}
   - component: {fileID: 1508150468}
+  - component: {fileID: 1508150471}
   m_Layer: 0
-  m_Name: Camera (1)
+  m_Name: Hallway_T_2_Right Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36681,6 +36695,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 17.235, y: 7.5140004, z: 0}
+--- !u!114 &1508150471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508150467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2d329409692c040b9f2ff650341f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1621810584
 GameObject:
   m_ObjectHideFlags: 0
@@ -37160,8 +37186,9 @@ GameObject:
   - component: {fileID: 1726890264}
   - component: {fileID: 1726890263}
   - component: {fileID: 1726890262}
+  - component: {fileID: 1726890265}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Hallway_T_2_Left Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37231,6 +37258,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 17.235, y: 7.5140004, z: 0}
+--- !u!114 &1726890265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726890261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2d329409692c040b9f2ff650341f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1862872818
 GameObject:
   m_ObjectHideFlags: 0

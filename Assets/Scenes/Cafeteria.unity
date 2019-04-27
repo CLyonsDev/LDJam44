@@ -6777,6 +6777,7 @@ GameObject:
   - component: {fileID: 1797079147}
   - component: {fileID: 1797079146}
   - component: {fileID: 1797079145}
+  - component: {fileID: 1797079148}
   m_Layer: 0
   m_Name: Cafe Camera
   m_TagString: Untagged
@@ -6848,6 +6849,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1797079148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797079144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2d329409692c040b9f2ff650341f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1805958873
 Mesh:
   m_ObjectHideFlags: 0
@@ -7967,13 +7980,14 @@ GameObject:
   - component: {fileID: 1975289152}
   - component: {fileID: 1975289151}
   - component: {fileID: 1975289150}
+  - component: {fileID: 1975289153}
   m_Layer: 0
   m_Name: Kitchen Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1975289150
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8038,6 +8052,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 5.927, y: 117.732, z: 0}
+--- !u!114 &1975289153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975289149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2d329409692c040b9f2ff650341f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &2002241946
 Mesh:
   m_ObjectHideFlags: 0

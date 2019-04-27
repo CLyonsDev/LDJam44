@@ -3795,13 +3795,14 @@ GameObject:
   - component: {fileID: 442787688}
   - component: {fileID: 442787687}
   - component: {fileID: 442787686}
+  - component: {fileID: 442787689}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Cryochamber Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &442787686
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3866,6 +3867,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 30.389002, z: 0}
+--- !u!114 &442787689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442787685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2d329409692c040b9f2ff650341f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &447780404
 GameObject:
   m_ObjectHideFlags: 0
@@ -10162,12 +10175,12 @@ GameObject:
   - component: {fileID: 955575969}
   - component: {fileID: 955575968}
   m_Layer: 0
-  m_Name: Camera (4)
+  m_Name: Beautyshot Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &955575968
 AudioListener:
   m_ObjectHideFlags: 0
