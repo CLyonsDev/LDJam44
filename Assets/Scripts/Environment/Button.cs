@@ -12,5 +12,6 @@ public class Button : Interactable
     {
         base.Activate();
         Debug.Log("Clicked button " + ButtonID);
+        Puzzle.ButtonPress(ButtonID);
     }
 }
