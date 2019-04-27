@@ -20,7 +20,8 @@ public class SceneSwitcher : Interactable
             if(camera.transform.root.name == CameraVariable.Value)
             {
                 currentCamera = camera.gameObject;
-            }else if (camera.transform.root.name == CameraToSwitchTo)
+            }
+            if (camera.transform.root.name == CameraToSwitchTo)
             {
                 nextCamera = camera.gameObject;
             }

@@ -14,7 +14,7 @@ public class SetCameraOnGameLoad : MonoBehaviour
         Camera[] cams = Resources.FindObjectsOfTypeAll<Camera>();
         foreach (Camera camera in cams)
         {
-            if(camera.transform.root.name != cam.Value)
+            if(camera.transform.root.name != cam.Value && camera.transform.root.CompareTag("GameCamera"))
             {
                 camera.transform.root.gameObject.SetActive(false);
             }
