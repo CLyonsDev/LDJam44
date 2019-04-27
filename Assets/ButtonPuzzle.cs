@@ -5,10 +5,18 @@ using UnityEngine;
 public class ButtonPuzzle : MonoBehaviour
 {
     public int[] IdOrder;
-    public int Progression = 0;
+    public int ProgressionIndex = 0;
 
     public void ButtonPress(int id)
     {
+        if(IdOrder[0] == id)
+        {
+            ProgressionIndex++;
+        }
 
+        if(ProgressionIndex+1 == IdOrder.Length)
+        {
+            Debug.Log("Puzzle Complete!");
+        }
     }
 }
