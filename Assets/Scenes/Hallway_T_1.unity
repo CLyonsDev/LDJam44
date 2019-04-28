@@ -600,6 +600,7 @@ MonoBehaviour:
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 0
   InteractablesToActivate:
   - {fileID: 1414589248}
   IsLocked: 1
@@ -28495,12 +28496,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: To Hallway
-  PlayAudioOnInteract: 0
-  ClipToPlay: {fileID: 0}
+  PlayAudioOnInteract: 1
+  ClipToPlay: {fileID: 8300000, guid: c85851329b216944fa53d6f95b461aa6, type: 3}
   PlayGlobal: 1
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 1
   CameraVariable: {fileID: 11400000, guid: 82298e5a7e4ab964f99c1ddcf66fa951, type: 2}
   CameraToSwitchTo: Hallway_T_2_Main Camera
 --- !u!65 &559968287
@@ -43090,6 +43092,7 @@ MonoBehaviour:
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 0
   CameraVariable: {fileID: 11400000, guid: 82298e5a7e4ab964f99c1ddcf66fa951, type: 2}
   CameraToSwitchTo: Hallway_T_1 Left Camera
 --- !u!65 &995221827
@@ -44163,12 +44166,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: To Hallway
-  PlayAudioOnInteract: 0
-  ClipToPlay: {fileID: 0}
+  PlayAudioOnInteract: 1
+  ClipToPlay: {fileID: 8300000, guid: 2ce3a38cd4a8d4041aca61e2af6fde78, type: 3}
   PlayGlobal: 1
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 1
   CameraVariable: {fileID: 11400000, guid: 82298e5a7e4ab964f99c1ddcf66fa951, type: 2}
   CameraToSwitchTo: Armory Camera
 --- !u!65 &1111577171
@@ -57745,6 +57749,7 @@ MonoBehaviour:
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 0
   IsLocked: 1
 --- !u!1 &1415871139
 GameObject:
@@ -71096,6 +71101,7 @@ MonoBehaviour:
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 0
   CameraVariable: {fileID: 11400000, guid: 82298e5a7e4ab964f99c1ddcf66fa951, type: 2}
   CameraToSwitchTo: Hallway_T_1 Camera
 --- !u!65 &1755731558
@@ -71792,6 +71798,7 @@ MonoBehaviour:
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 0
   CameraVariable: {fileID: 11400000, guid: 82298e5a7e4ab964f99c1ddcf66fa951, type: 2}
   CameraToSwitchTo: Cryochamber Camera
 --- !u!65 &1819466517

@@ -7,9 +7,13 @@ public class Touchpad : Interactable
     public Interactable[] InteractablesToActivate;
     public bool IsLocked = false;
     public Item ItemToUnlockThis;
+    private bool HasBeenActivated = false;
 
     public override void Activate()
     {
+        if (HasBeenActivated)
+            return;
+
         base.Activate();
 
         if (IsLocked == true)
@@ -33,6 +37,7 @@ public class Touchpad : Interactable
             {
                 interactable.IsLocked = false;
                 interactable.Activate();
+                HasBeenActivated = true;
             }
         }
     }

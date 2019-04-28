@@ -21,5 +21,7 @@ public class SetCameraOnGameLoad : MonoBehaviour
         }
 
         inv.Clear();
+
+        CursorManager.Instance.SetCurstor(CursorManager.CursorStates.normal);
     }
 }

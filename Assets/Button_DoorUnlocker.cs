@@ -4,25 +4,32 @@ using UnityEngine;
 
 public class Button_DoorUnlocker : Interactable
 {
-    //TODO: FIX
-    string DoorToUnlock;
+    public string DoorToUnlock;
+    public bool HasBeenUsed = false;
 
     public override void Activate()
     {
-        base.Activate();
+        if (HasBeenUsed)
+            return;
+
+        //Door[] doors = //Resources.FindObjectsOfTypeAll<Door>();
         Door[] doors = Resources.FindObjectsOfTypeAll<Door>();
         Debug.Log(doors.Length);
         
         foreach (Door door in doors)
         {
-            if (door.transform.name == DoorToUnlock)
+            //Debug.Log(string.Format("{0} :: {1}", door.Name, DoorToUnlock));
+            if (door.Name == DoorToUnlock)
             {
-                Debug.Log(door.Name);
+                //Debug.Log(door.Name);
                 Debug.Log("Door " + DoorToUnlock + " unlocked.");
                 door.IsLocked = false;
                 door.Activate();
+                HasBeenUsed = true;
                 break;
             }
         }
+
+        base.Activate();
     }
 }

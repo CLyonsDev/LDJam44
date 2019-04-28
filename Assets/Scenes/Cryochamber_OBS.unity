@@ -783,6 +783,7 @@ MonoBehaviour:
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 0
   CameraVariable: {fileID: 11400000, guid: 82298e5a7e4ab964f99c1ddcf66fa951, type: 2}
   CameraToSwitchTo: Terminal Camera
 --- !u!65 &225340208
@@ -3587,11 +3588,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Button
   PlayAudioOnInteract: 0
-  ClipToPlay: {fileID: 0}
+  ClipToPlay: {fileID: 8300000, guid: 10fd3fe12b33aed40b8d5fca29394665, type: 3}
   PlayGlobal: 1
   Volume: 1
-  PlayMultiple: 0
+  PlayMultiple: 1
   HasPlayed: 0
+  DisablesInput: 0
   ButtonID: 2
   Puzzle: {fileID: 573581652}
 --- !u!64 &499564232
@@ -4660,6 +4662,7 @@ MonoBehaviour:
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 0
   CameraVariable: {fileID: 11400000, guid: 82298e5a7e4ab964f99c1ddcf66fa951, type: 2}
   CameraToSwitchTo: Hallway_T_2_Right Camera
 --- !u!65 &575812222
@@ -6102,11 +6105,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Button
   PlayAudioOnInteract: 0
-  ClipToPlay: {fileID: 0}
+  ClipToPlay: {fileID: 8300000, guid: 10fd3fe12b33aed40b8d5fca29394665, type: 3}
   PlayGlobal: 1
   Volume: 1
-  PlayMultiple: 0
+  PlayMultiple: 1
   HasPlayed: 0
+  DisablesInput: 0
   ButtonID: 3
   Puzzle: {fileID: 573581652}
 --- !u!64 &744020812
@@ -10721,6 +10725,7 @@ MonoBehaviour:
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 0
   CameraVariable: {fileID: 11400000, guid: 82298e5a7e4ab964f99c1ddcf66fa951, type: 2}
   CameraToSwitchTo: OBS Camera
 --- !u!65 &1197704908
@@ -13405,12 +13410,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Button
-  PlayAudioOnInteract: 0
-  ClipToPlay: {fileID: 0}
+  PlayAudioOnInteract: 1
+  ClipToPlay: {fileID: 8300000, guid: 10fd3fe12b33aed40b8d5fca29394665, type: 3}
   PlayGlobal: 1
   Volume: 1
-  PlayMultiple: 0
+  PlayMultiple: 1
   HasPlayed: 0
+  DisablesInput: 0
   ButtonID: 0
   Puzzle: {fileID: 573581652}
 --- !u!64 &1511665836
@@ -14626,6 +14632,7 @@ MonoBehaviour:
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 0
   CameraVariable: {fileID: 11400000, guid: 82298e5a7e4ab964f99c1ddcf66fa951, type: 2}
   CameraToSwitchTo: Terminal Camera
 --- !u!65 &1857981465
@@ -15866,11 +15873,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Button
   PlayAudioOnInteract: 0
-  ClipToPlay: {fileID: 0}
+  ClipToPlay: {fileID: 8300000, guid: 10fd3fe12b33aed40b8d5fca29394665, type: 3}
   PlayGlobal: 1
   Volume: 1
-  PlayMultiple: 0
+  PlayMultiple: 1
   HasPlayed: 0
+  DisablesInput: 0
   ButtonID: 1
   Puzzle: {fileID: 573581652}
 --- !u!64 &1912517048
@@ -16131,6 +16139,7 @@ MonoBehaviour:
   Volume: 1
   PlayMultiple: 0
   HasPlayed: 0
+  DisablesInput: 0
   CameraVariable: {fileID: 11400000, guid: 82298e5a7e4ab964f99c1ddcf66fa951, type: 2}
   CameraToSwitchTo: Terminal Camera
 --- !u!65 &2005995552

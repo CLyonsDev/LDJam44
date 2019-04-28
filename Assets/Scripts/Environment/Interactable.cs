@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
@@ -10,9 +11,11 @@ public class Interactable : MonoBehaviour
     public float Volume = 1;
     public bool PlayMultiple = false;
     public bool HasPlayed = false;
+    public bool DisablesInput;
+    private float dur;
 
     //TODO: GameEvent hook for activation.
-    
+
     public virtual void Activate() {
         Debug.Log("Interacted with " + Name);
         if(PlayAudioOnInteract && (PlayMultiple == true || HasPlayed == false))
@@ -26,11 +29,27 @@ public class Interactable : MonoBehaviour
             {
                 AudioManager.Instance.PlayPlayerClip(ClipToPlay, Volume);
             }
+
+            if (DisablesInput)
+            {
+                CursorManager.Instance.SetCurstor(CursorManager.CursorStates.deactivated);
+                dur = ClipToPlay.length;
+                StartCoroutine(ReEnableInput());
+            }
         }
     }
 
     public virtual void UsedWith(Item item)
     {
         Debug.Log(Name + " has been used with " + item.Name);
+    }
+
+    private IEnumerator ReEnableInput()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(dur);
+            CursorManager.Instance.SetCurstor(CursorManager.CursorStates.normal);
+        }
     }
 }

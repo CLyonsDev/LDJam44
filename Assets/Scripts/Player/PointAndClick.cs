@@ -17,7 +17,9 @@ public class PointAndClick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+
+
+        if(Input.GetButtonDown("Fire1") && CursorManager.Instance.cursorState != CursorManager.CursorStates.deactivated)
         {
             // Fire ray
             GameObject camGO = GameObject.Find(CurrentCamera.Value);
@@ -41,5 +43,33 @@ public class PointAndClick : MonoBehaviour
                 }
             }
         }
+
+        // Passive Raycast
+        if (CursorManager.Instance.cursorState != CursorManager.CursorStates.deactivated)
+        {
+            // Fire passive ray
+            GameObject camGO = GameObject.Find(CurrentCamera.Value);
+            Camera cam = camGO.GetComponentInChildren<Camera>();
+
+            if (cam == null || camGO == null)
+            {
+                Debug.LogError("PointAndClick::Update() -- Camera not found on " + CurrentCamera);
+                return;
+            }
+
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, InteractableMask))
+            {
+                if (hit.transform.root.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+                {
+                    CursorManager.Instance.SetCurstor(CursorManager.CursorStates.interactable);
+                }
+                else
+                {
+                    CursorManager.Instance.SetCurstor(CursorManager.CursorStates.normal);
+                }
+            }
+        }        
     }
 }
