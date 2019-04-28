@@ -5,13 +5,15 @@ using UnityEngine;
 public class ItemPickup : Interactable
 {
     public Item Item;
-    public Inventory PlayerInventory;
+    private Inventory PlayerInventory;
 
     //TODO: GameEvent hook for pickup.
 
     public override void Activate()
     {
         base.Activate();
+
+        PlayerInventory = GameReferences.refs.PlayerInventory;
 
         if(PlayerInventory == null)
         {

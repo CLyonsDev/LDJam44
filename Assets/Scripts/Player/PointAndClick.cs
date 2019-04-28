@@ -33,7 +33,12 @@ public class PointAndClick : MonoBehaviour
 
             if(Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, InteractableMask))
             {
-                hit.transform.root.GetComponent<Interactable>().Activate();
+                Debug.LogWarning(hit.transform.name);
+                if(hit.transform.root.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+                {
+                    Debug.Log("Interact");
+                    hit.transform.GetComponent<Interactable>().Activate();
+                }
             }
         }
     }

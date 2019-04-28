@@ -33,6 +33,15 @@ public class SceneSwitcher : Interactable
             return;
         }
 
+        if(currentCamera == nextCamera)
+        {
+            Debug.LogError("SceneSwitcher::Activate() -- Current camera cannot switch to the same camera! Make sure the triggers to not overlap.");
+            return;
+        }
+
+        Debug.Log(currentCamera.name);
+        Debug.Log(nextCamera.name);
+
         nextCamera.SetActive(true);
         currentCamera.SetActive(false);
         CameraVariable.Value = CameraToSwitchTo;

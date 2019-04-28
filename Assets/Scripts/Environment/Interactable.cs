@@ -4,10 +4,29 @@ public class Interactable : MonoBehaviour
 {
     public string Name;
 
+    public bool PlayAudioOnInteract = false;
+    public AudioClip ClipToPlay;
+    public bool PlayGlobal = true;  // If false, play locally on player.
+    public float Volume = 1;
+    public bool PlayMultiple = false;
+    public bool HasPlayed = false;
+
     //TODO: GameEvent hook for activation.
     
     public virtual void Activate() {
         Debug.Log("Interacted with " + Name);
+        if(PlayAudioOnInteract && (PlayMultiple == true || HasPlayed == false))
+        {
+            HasPlayed = true;
+            if(PlayGlobal)
+            {
+                AudioManager.Instance.PlayGlobalClip(ClipToPlay, Volume);
+            }
+            else
+            {
+                AudioManager.Instance.PlayPlayerClip(ClipToPlay, Volume);
+            }
+        }
     }
 
     public virtual void UsedWith(Item item)
