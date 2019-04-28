@@ -8,7 +8,12 @@ public class ButtonPuzzle : MonoBehaviour
     public int ProgressionIndex = 0;
     private bool solved = false;
 
+    public GameObject[] GameObjectsToEnableOnCompletion;
+    public GameObject[] GameObjectsToDisableOnCompletion;
+
     public string DoorToUnlockOnCompletion;
+
+    Animator anim;
 
     public void ButtonPress(int id)
     {
@@ -40,6 +45,15 @@ public class ButtonPuzzle : MonoBehaviour
                     Debug.Log("Door " + DoorToUnlockOnCompletion + " unlocked.");
                     door.IsLocked = false;
                     door.Activate();
+                    door.GetComponentInChildren<Animator>().SetTrigger("Open");
+                    foreach (GameObject go in GameObjectsToEnableOnCompletion)
+                    {
+                        go.SetActive(true);
+                    }
+                    foreach (GameObject go in GameObjectsToDisableOnCompletion)
+                    {
+                        go.SetActive(false);
+                    }
                     break;
                 }
             }

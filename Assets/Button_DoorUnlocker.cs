@@ -6,6 +6,7 @@ public class Button_DoorUnlocker : Interactable
 {
     public string DoorToUnlock;
     public bool HasBeenUsed = false;
+    public Transform otherButton;
 
     public override void Activate()
     {
@@ -26,6 +27,7 @@ public class Button_DoorUnlocker : Interactable
                 door.IsLocked = false;
                 door.Activate();
                 HasBeenUsed = true;
+                otherButton.GetComponent<Button_DoorUnlocker>().HasBeenUsed = true;
                 break;
             }
         }
