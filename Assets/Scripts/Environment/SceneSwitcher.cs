@@ -6,6 +6,7 @@ public class SceneSwitcher : Interactable
 {
     public StringVariable CameraVariable;
     public string CameraToSwitchTo;
+    public Transform NewPlayerPosition;
 
     public override void Activate()
     {
@@ -41,6 +42,8 @@ public class SceneSwitcher : Interactable
 
         Debug.Log(currentCamera.name);
         Debug.Log(nextCamera.name);
+
+        GameReferences.refs.MovePlayer(NewPlayerPosition);
 
         nextCamera.SetActive(true);
         currentCamera.SetActive(false);
