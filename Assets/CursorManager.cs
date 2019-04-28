@@ -25,6 +25,11 @@ public class CursorManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ResetCursor();
+    }
+
+    public void ResetCursor()
+    {
         SetCurstor(CursorStates.interactable);
         SetCurstor(CursorStates.normal);
     }

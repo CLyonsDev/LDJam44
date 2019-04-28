@@ -428,6 +428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerInventory: {fileID: 11400000, guid: 9641c82e8645bdc4c9b689e86b85d767, type: 2}
   CurrentCamera: {fileID: 11400000, guid: 82298e5a7e4ab964f99c1ddcf66fa951, type: 2}
+  PlayerGameObject: {fileID: 0}
 --- !u!114 &954116248
 MonoBehaviour:
   m_ObjectHideFlags: 0
