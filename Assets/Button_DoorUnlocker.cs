@@ -10,16 +10,17 @@ public class Button_DoorUnlocker : Interactable
     public override void Activate()
     {
         base.Activate();
-        Touchpad[] doors = Resources.FindObjectsOfTypeAll<Touchpad>();
+        Door[] doors = Resources.FindObjectsOfTypeAll<Door>();
         Debug.Log(doors.Length);
         
-        foreach (Touchpad door in doors)
+        foreach (Door door in doors)
         {
-            Debug.Log(door.Name);
-            if (door.Name.Equals(DoorToUnlock))
+            if (door.transform.name == DoorToUnlock)
             {
+                Debug.Log(door.Name);
                 Debug.Log("Door " + DoorToUnlock + " unlocked.");
-                door.Unlock();
+                door.IsLocked = false;
+                door.Activate();
                 break;
             }
         }

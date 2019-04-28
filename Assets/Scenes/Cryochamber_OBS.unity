@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.003455262, g: 0.0048273983, b: 0.00544942, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5812,7 +5812,7 @@ PrefabInstance:
     - target: {fileID: 1280199086371323324, guid: 5a853dac6f8758b4c8895dc1dffb1b08,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.105
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 1280199086371323324, guid: 5a853dac6f8758b4c8895dc1dffb1b08,
         type: 3}
@@ -5857,12 +5857,12 @@ PrefabInstance:
     - target: {fileID: 9043019195431138058, guid: 5a853dac6f8758b4c8895dc1dffb1b08,
         type: 3}
       propertyPath: m_Size.z
-      value: 5
+      value: 10.27
       objectReference: {fileID: 0}
     - target: {fileID: 9043019195431138058, guid: 5a853dac6f8758b4c8895dc1dffb1b08,
         type: 3}
       propertyPath: m_Size.x
-      value: 5
+      value: 12.61
       objectReference: {fileID: 0}
     - target: {fileID: 9043019195431138058, guid: 5a853dac6f8758b4c8895dc1dffb1b08,
         type: 3}
@@ -13261,7 +13261,7 @@ Camera:
   m_HDR: 1
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
+  m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -13293,7 +13293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractableMask:
     serializedVersion: 2
-    m_Bits: 819
+    m_Bits: 563
   CurrentCamera:
     UseConstant: 0
     ConstantValue: 
@@ -13310,7 +13310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 0}
+  volumeTrigger: {fileID: 1450084018}
   volumeLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -13967,7 +13967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1631463035
 AudioListener:
   m_ObjectHideFlags: 0
@@ -14046,7 +14046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractableMask:
     serializedVersion: 2
-    m_Bits: 819
+    m_Bits: 563
   CurrentCamera:
     UseConstant: 0
     ConstantValue: 
