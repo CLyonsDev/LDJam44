@@ -7,10 +7,16 @@ ModelImporter:
     100002: Cube_001
     100004: Cylinder
     100006: //RootNode
+    100008: Cube_002
+    100010: Cube_003
+    100012: Cube_004
     400000: Cube
     400002: Cube_001
     400004: Cylinder
     400006: //RootNode
+    400008: Cube_002
+    400010: Cube_003
+    400012: Cube_004
     2100000: unnamed
     2100002: Beret
     2100004: Spacesuit__max_png
@@ -19,12 +25,21 @@ ModelImporter:
     2300000: Cube
     2300002: Cube_001
     2300004: Cylinder
+    2300006: Cube_002
+    2300008: Cube_003
+    2300010: Cube_004
     3300000: Cube
     3300002: Cube_001
     3300004: Cylinder
+    3300006: Cube_002
+    3300008: Cube_003
+    3300010: Cube_004
     4300000: Cube_001
     4300002: Cylinder
     4300004: Cube
+    4300006: Cube_004
+    4300008: Cube_003
+    4300010: Cube_002
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
@@ -102,6 +117,21 @@ ModelImporter:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: Cube_004
+      parentName: max(Clone)
+      position: {x: -0, y: 2.8998053, z: -0.00000012675451}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.8141284, y: 0.35330996, z: 0.8141284}
+    - name: Cube_003
+      parentName: max(Clone)
+      position: {x: -0, y: 2.8998053, z: -0.00000012675451}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.8141284, y: 0.35330996, z: 0.8141284}
+    - name: Cube_002
+      parentName: max(Clone)
+      position: {x: -0, y: 2.8998053, z: -0.00000012675451}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.8141284, y: 0.35330996, z: 0.8141284}
     - name: Cube_001
       parentName: max(Clone)
       position: {x: -0, y: 5.942776, z: 0.6126534}
