@@ -26,7 +26,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             if(DisablesInput)
             {
                 CursorManager.Instance.SetCurstor(CursorManager.CursorStates.deactivated);
-                dur = clip.length;
+                dur = clip.length + 1.5f;
                 StartCoroutine(ReEnableInput());
             }
         }

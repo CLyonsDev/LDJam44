@@ -13,6 +13,20 @@ ModelImporter:
     100014: Cylinder_001
     100016: Cylinder_002
     100018: //RootNode
+    100020: Cube_006
+    100022: Cube_007
+    100024: Cube_008
+    100026: Cube_009
+    100028: Cylinder_003
+    100030: Cylinder_004
+    100032: Cylinder_005
+    100034: Cylinder_006
+    100036: Cylinder_007
+    100038: Cylinder_008
+    100040: Cylinder_009
+    100042: Cylinder_010
+    100044: Sphere
+    100046: Sphere_001
     400000: Cube
     400002: Cube_001
     400004: Cube_002
@@ -23,10 +37,30 @@ ModelImporter:
     400014: Cylinder_001
     400016: Cylinder_002
     400018: //RootNode
+    400020: Cube_006
+    400022: Cube_007
+    400024: Cube_008
+    400026: Cube_009
+    400028: Cylinder_003
+    400030: Cylinder_004
+    400032: Cylinder_005
+    400034: Cylinder_006
+    400036: Cylinder_007
+    400038: Cylinder_008
+    400040: Cylinder_009
+    400042: Cylinder_010
+    400044: Sphere
+    400046: Sphere_001
     2100000: unnamed
     2100002: Armor
     2100004: cuckboi
     2100006: Belt
+    2100008: Mustache
+    2100010: Tongue
+    2100012: Silver
+    2100014: Spacesuit
+    2100016: Pupil
+    2100018: Eye
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
@@ -36,6 +70,20 @@ ModelImporter:
     2300012: Cylinder
     2300014: Cylinder_001
     2300016: Cylinder_002
+    2300018: Cube_006
+    2300020: Cube_007
+    2300022: Cube_008
+    2300024: Cube_009
+    2300026: Cylinder_003
+    2300028: Cylinder_004
+    2300030: Cylinder_005
+    2300032: Cylinder_006
+    2300034: Cylinder_007
+    2300036: Cylinder_008
+    2300038: Cylinder_009
+    2300040: Cylinder_010
+    2300042: Sphere
+    2300044: Sphere_001
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
@@ -45,6 +93,20 @@ ModelImporter:
     3300012: Cylinder
     3300014: Cylinder_001
     3300016: Cylinder_002
+    3300018: Cube_006
+    3300020: Cube_007
+    3300022: Cube_008
+    3300024: Cube_009
+    3300026: Cylinder_003
+    3300028: Cylinder_004
+    3300030: Cylinder_005
+    3300032: Cylinder_006
+    3300034: Cylinder_007
+    3300036: Cylinder_008
+    3300038: Cylinder_009
+    3300040: Cylinder_010
+    3300042: Sphere
+    3300044: Sphere_001
     4300000: Cube_005
     4300002: Cube_004
     4300004: Cube_003
@@ -54,8 +116,23 @@ ModelImporter:
     4300012: Cylinder_001
     4300014: Cylinder
     4300016: Cube_001
+    4300018: Cylinder_010
+    4300020: Cylinder_009
+    4300022: Cylinder_008
+    4300024: Cylinder_007
+    4300026: Cylinder_006
+    4300028: Cylinder_005
+    4300030: Cube_008
+    4300032: Sphere
+    4300034: Cube_009
+    4300036: Cylinder_004
+    4300038: Sphere_001
+    4300040: Cube_007
+    4300042: Cube_006
+    4300044: Cylinder_003
     7400000: Default Take
     9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -68,7 +145,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Hips' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -76,7 +154,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -123,7 +201,127 @@ ModelImporter:
   humanDescription:
     serializedVersion: 2
     human: []
-    skeleton: []
+    skeleton:
+    - name: lizard_boi(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_010
+      parentName: lizard_boi(Clone)
+      position: {x: 0.000000012961441, y: 3.41227, z: -0.34827068}
+      rotation: {x: -0.86456615, y: 0, z: -0, w: 0.502519}
+      scale: {x: 0.1686002, y: 0.16860022, z: 0.16860022}
+    - name: Cylinder_009
+      parentName: lizard_boi(Clone)
+      position: {x: 0.000000012961441, y: 3.5614245, z: -0.025030322}
+      rotation: {x: -0.7215292, y: 0, z: -0, w: 0.692384}
+      scale: {x: 0.1686002, y: 0.1686002, z: 0.1686002}
+    - name: Cylinder_008
+      parentName: lizard_boi(Clone)
+      position: {x: 0.000000012961441, y: 3.4636059, z: 0.32498208}
+      rotation: {x: -0.5908243, y: 0, z: -0, w: 0.8068003}
+      scale: {x: 0.1686002, y: 0.1686002, z: 0.1686002}
+    - name: Cylinder_007
+      parentName: lizard_boi(Clone)
+      position: {x: 0.000000011098796, y: 3.2842088, z: 0.63871384}
+      rotation: {x: -0.46184024, y: 0, z: -0, w: 0.8869631}
+      scale: {x: 0.1686002, y: 0.1686002, z: 0.1686002}
+    - name: Cylinder_006
+      parentName: lizard_boi(Clone)
+      position: {x: -0.03305745, y: 2.2226756, z: 0.9711448}
+      rotation: {x: 0.090817176, y: -0.15288816, z: -0.065482475, w: 0.9818806}
+      scale: {x: 0.21525149, y: 0.35061267, z: 0.16421574}
+    - name: Cylinder_005
+      parentName: lizard_boi(Clone)
+      position: {x: -0, y: 1.7948145, z: 1.3911971}
+      rotation: {x: -0.6572589, y: 0, z: -0, w: 0.75366485}
+      scale: {x: 0.1526451, y: 0.09755445, z: 0.1526451}
+    - name: Cube_008
+      parentName: lizard_boi(Clone)
+      position: {x: -0.045300193, y: -1.3439043, z: -0.3656368}
+      rotation: {x: -0.6460666, y: 0, z: -0, w: 0.76328105}
+      scale: {x: 0.35165063, y: 0.35165063, z: 0.29637107}
+    - name: Sphere
+      parentName: lizard_boi(Clone)
+      position: {x: -0, y: 2.7008102, z: 0.015465052}
+      rotation: {x: -0.6128764, y: 0, z: -0, w: 0.7901788}
+      scale: {x: 0.7557512, y: 0.7557512, z: 0.7557512}
+    - name: Cube_004
+      parentName: lizard_boi(Clone)
+      position: {x: -0, y: -0.943911, z: 0.5518634}
+      rotation: {x: -0.66763175, y: 0, z: -0, w: 0.74449176}
+      scale: {x: 0.2026582, y: 0.0538245, z: 0.16710216}
+    - name: Cube_003
+      parentName: lizard_boi(Clone)
+      position: {x: -0, y: -1.2971497, z: 0.35921517}
+      rotation: {x: -0.7391287, y: 0, z: -0, w: 0.67356426}
+      scale: {x: 0.24528867, y: 0.11346935, z: 0.23490235}
+    - name: Cube_002
+      parentName: lizard_boi(Clone)
+      position: {x: -0, y: 1.3524127, z: -0.000000059115838}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.28568238, y: 0.28568238, z: 0.28568238}
+    - name: Cube
+      parentName: lizard_boi(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 0.6813922, y: 0.6425503, z: 1}
+    - name: Cube_009
+      parentName: lizard_boi(Clone)
+      position: {x: -0, y: 4.3735733, z: -0.00000019117496}
+      rotation: {x: -0.6532815, y: 0.27059805, z: -0.27059805, w: 0.65328145}
+      scale: {x: 0.26227093, y: 0.26227093, z: 0.26227093}
+    - name: Cylinder_004
+      parentName: lizard_boi(Clone)
+      position: {x: 0.000000005620092, y: 1.8362104, z: 1.5955591}
+      rotation: {x: 0.54259366, y: 0.4534227, z: -0.5425936, w: -0.45342278}
+      scale: {x: 0.1310208, y: 0.09587381, z: 0.07928573}
+    - name: Sphere_001
+      parentName: lizard_boi(Clone)
+      position: {x: 0.5170853, y: 3.025835, z: 0.36417246}
+      rotation: {x: -0.7497011, y: -0.076762035, z: 0.15737097, w: 0.63819295}
+      scale: {x: 0.19721694, y: 0.1989771, z: 0.22379263}
+    - name: Cube_007
+      parentName: lizard_boi(Clone)
+      position: {x: 1.5963626, y: -0.3892339, z: 0.27478167}
+      rotation: {x: 0.33686703, y: 0.49090183, z: -0.45460343, w: 0.66247404}
+      scale: {x: 0.37148684, y: 0.4344286, z: 0.3718135}
+    - name: Cube_006
+      parentName: lizard_boi(Clone)
+      position: {x: 0.6149494, y: -3.4981627, z: -0.03064236}
+      rotation: {x: -0.6912122, y: 0.14908312, z: 0.14908311, w: 0.6912122}
+      scale: {x: 0.18630478, y: 0.18630478, z: 0.24192679}
+    - name: Cylinder_003
+      parentName: lizard_boi(Clone)
+      position: {x: 0.4483437, y: -1.437047, z: -0.17348422}
+      rotation: {x: -0.6594533, y: -0.105706, z: 0.09442187, w: 0.73826295}
+      scale: {x: 0.37519145, y: 0.3809729, z: 0.29140162}
+    - name: Cube_005
+      parentName: lizard_boi(Clone)
+      position: {x: -0.10062125, y: -1.6991924, z: -0.2067008}
+      rotation: {x: -0.6329864, y: -0.055792574, z: 0.06779585, w: 0.76916784}
+      scale: {x: 0.63515735, y: 0.69860286, z: 0.6559585}
+    - name: Cylinder_002
+      parentName: lizard_boi(Clone)
+      position: {x: 1.2141047, y: 1.6309959, z: 0.3598719}
+      rotation: {x: -0.088122346, y: 0, z: -0, w: 0.99610966}
+      scale: {x: 0.08449188, y: 0.08449189, z: 0.08449189}
+    - name: Cylinder_001
+      parentName: lizard_boi(Clone)
+      position: {x: 1.466875, y: 0.30345553, z: 0.08932384}
+      rotation: {x: -0.77984536, y: -0.11085406, z: 0.086703196, w: 0.60994685}
+      scale: {x: 0.27170706, y: 0.2678784, z: 0.17227149}
+    - name: Cylinder
+      parentName: lizard_boi(Clone)
+      position: {x: 1.2043955, y: 0.97464126, z: 0.00000006915579}
+      rotation: {x: -0.677688, y: -0.20183916, z: 0.20183918, w: 0.677688}
+      scale: {x: 0.2806024, y: 0.2806024, z: 0.2806024}
+    - name: Cube_001
+      parentName: lizard_boi(Clone)
+      position: {x: 1.0861547, y: 1.4431187, z: 0.022405677}
+      rotation: {x: -0.70112836, y: -0.091755554, z: 0.09175556, w: 0.70112836}
+      scale: {x: 0.375201, y: 0.40709138, z: 0.3979811}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -133,10 +331,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
