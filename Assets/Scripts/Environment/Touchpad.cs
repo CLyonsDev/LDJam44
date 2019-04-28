@@ -7,16 +7,19 @@ public class Touchpad : Interactable
     public Interactable[] InteractablesToActivate;
     public bool IsLocked = false;
     public Item ItemToUnlockThis;
+    private bool HasBeenActivated = false;
 
     public override void Activate()
     {
-        base.Activate();
+        if (HasBeenActivated)
+            return;
 
-        bool hasKey = GameReferences.refs.PlayerInventory.ItemList.Contains(ItemToUnlockThis);
+        base.Activate();
 
         if (IsLocked == true)
         {
-            if(hasKey)
+            bool hasKey = GameReferences.refs.PlayerInventory.ItemList.Contains(ItemToUnlockThis);
+            if (hasKey)
             {
                 Debug.Log("Touchpad WAS locked but is now unlocked!");
                 IsLocked = false;
@@ -34,6 +37,7 @@ public class Touchpad : Interactable
             {
                 interactable.IsLocked = false;
                 interactable.Activate();
+                HasBeenActivated = true;
             }
         }
     }
@@ -46,5 +50,11 @@ public class Touchpad : Interactable
             Debug.Log("Touchpad unlocked!");
             IsLocked = false;
         }
+    }
+
+    public void Unlock()
+    {
+        IsLocked = false;
+        Debug.Log("Unlocked: " + IsLocked);
     }
 }
