@@ -5,6 +5,12 @@ public class Interactable : MonoBehaviour
 {
     public string Name;
 
+    [Space]
+    public bool MustMoveToBeforeInteraction = true;
+    public Transform MoveToLoc;
+    public float InteractDelay = 0f;
+    
+    [Space]
     public bool PlayAudioOnInteract = false;
     public AudioClip ClipToPlay;
     public bool PlayGlobal = true;  // If false, play locally on player.
@@ -17,11 +23,18 @@ public class Interactable : MonoBehaviour
     //TODO: GameEvent hook for activation.
 
     public virtual void Activate() {
+        StartCoroutine(ActivateDelay());
+    }
+
+    private IEnumerator ActivateDelay()
+    {
+        yield return new WaitForSeconds(InteractDelay);
+
         Debug.Log("Interacted with " + Name);
-        if(PlayAudioOnInteract && (PlayMultiple == true || HasPlayed == false))
+        if (PlayAudioOnInteract && (PlayMultiple == true || HasPlayed == false))
         {
             HasPlayed = true;
-            if(PlayGlobal)
+            if (PlayGlobal)
             {
                 AudioManager.Instance.PlayGlobalClip(ClipToPlay, Volume);
             }

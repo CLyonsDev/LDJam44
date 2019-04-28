@@ -38,8 +38,23 @@ public class PointAndClick : MonoBehaviour
                 Debug.LogWarning(hit.transform.name);
                 if(hit.transform.root.gameObject.layer == LayerMask.NameToLayer("Interactable"))
                 {
-                    Debug.Log("Interact");
-                    hit.transform.GetComponent<Interactable>().Activate();
+                    Interactable i = hit.transform.GetComponent<Interactable>();
+                    if (i.MustMoveToBeforeInteraction)
+                    {
+                        Debug.Log("Move to");
+                        if(i.MoveToLoc != null)
+                            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().MoveToInteract(i.MoveToLoc.position, i);
+                        else
+                        {
+                            Debug.LogWarning("Move to loc not found for interactable. Defaulting to basic activate.");
+                            i.Activate();
+                        }
+                    }
+                    else
+                    {
+                        Debug.Log("Interact");
+                        i.Activate();
+                    }
                 }
             }
         }
