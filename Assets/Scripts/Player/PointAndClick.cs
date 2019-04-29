@@ -8,6 +8,8 @@ public class PointAndClick : MonoBehaviour
 
     public StringReference CurrentCamera;
 
+    public FloatReference PlayerHealth;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,8 @@ public class PointAndClick : MonoBehaviour
 
             if(Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, InteractableMask))
             {
+                PlayerHealth.Value -= 5;
+
                 Debug.LogWarning(hit.transform.name);
                 if(hit.transform.root.gameObject.layer == LayerMask.NameToLayer("Interactable"))
                 {
@@ -79,10 +83,12 @@ public class PointAndClick : MonoBehaviour
                 if (hit.transform.root.gameObject.layer == LayerMask.NameToLayer("Interactable"))
                 {
                     CursorManager.Instance.SetCurstor(CursorManager.CursorStates.interactable);
+                    DisplayInteractionText.Instance.SetText(hit.transform.gameObject.GetComponent<Interactable>().Name);
                 }
                 else
                 {
                     CursorManager.Instance.SetCurstor(CursorManager.CursorStates.normal);
+                    DisplayInteractionText.Instance.SetText("");
                 }
             }
         }        

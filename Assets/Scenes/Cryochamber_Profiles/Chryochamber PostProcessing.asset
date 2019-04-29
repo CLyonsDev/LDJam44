@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
   - {fileID: 114597625662332756}
-  - {fileID: 114166298668971440}
   - {fileID: 114723180457774632}
   - {fileID: 114305617741102386}
   - {fileID: 114112315566092496}
@@ -62,34 +61,6 @@ MonoBehaviour:
     defaultState: 1
   opacity:
     overrideState: 1
-    value: 1
---- !u!114 &114166298668971440
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
-  m_Name: DepthOfField
-  m_EditorClassIdentifier: 
-  active: 0
-  enabled:
-    overrideState: 1
-    value: 1
-  focusDistance:
-    overrideState: 0
-    value: 2.3
-  aperture:
-    overrideState: 0
-    value: 5.6
-  focalLength:
-    overrideState: 0
-    value: 46
-  kernelSize:
-    overrideState: 0
     value: 1
 --- !u!114 &114305617741102386
 MonoBehaviour:

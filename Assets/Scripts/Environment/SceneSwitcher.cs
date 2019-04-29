@@ -8,6 +8,8 @@ public class SceneSwitcher : Interactable
     public string CameraToSwitchTo;
     public Transform NewPlayerPosition;
 
+    public int FadeType = 0; // 0 = crossfade, 1 = fade from black, 2 = fade to black
+
     public override void Activate()
     {
         base.Activate();
@@ -38,6 +40,20 @@ public class SceneSwitcher : Interactable
         {
             Debug.LogError("SceneSwitcher::Activate() -- Current camera cannot switch to the same camera! Make sure the triggers to not overlap.");
             return;
+        }
+
+
+        switch (FadeType)
+        {
+            case 0:
+                FadeToBlack.Instance.FadeFromBlack();
+                break;
+            case 1:
+                FadeToBlack.Instance.Fade2Black();
+                break;
+            case 2:
+                FadeToBlack.Instance.FadeFromBlack();
+                break;
         }
 
         Debug.Log(currentCamera.name);

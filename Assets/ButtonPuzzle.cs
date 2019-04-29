@@ -15,6 +15,10 @@ public class ButtonPuzzle : MonoBehaviour
 
     Animator anim;
 
+    public AudioClip Wrong;
+    public AudioClip Right;
+    public AudioClip Complete;
+
     public void ButtonPress(int id)
     {
         if (solved == true)
@@ -23,19 +27,22 @@ public class ButtonPuzzle : MonoBehaviour
         if(IdOrder[ProgressionIndex] == id)
         {
             ProgressionIndex++;
+            AudioManager.Instance.PlayGlobalClip(Right, 0.75f);
         }
         else
         {
             ProgressionIndex = 0;
+            AudioManager.Instance.PlayGlobalClip(Wrong, 0.75f);
         }
 
         if(ProgressionIndex == IdOrder.Length)
         {
             Debug.Log("Puzzle Complete!");
             solved = true;
+            AudioManager.Instance.PlayGlobalClip(Complete, 0.75f);
         }
 
-        if(solved)
+        if (solved)
         {
             Touchpad[] doors = Resources.FindObjectsOfTypeAll<Touchpad>();
             foreach (Touchpad door in doors)
