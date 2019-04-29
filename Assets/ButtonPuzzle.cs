@@ -40,6 +40,14 @@ public class ButtonPuzzle : MonoBehaviour
             Debug.Log("Puzzle Complete!");
             solved = true;
             AudioManager.Instance.PlayGlobalClip(Complete, 0.75f);
+            foreach (GameObject go in GameObjectsToEnableOnCompletion)
+            {
+                go.SetActive(true);
+            }
+            foreach (GameObject go in GameObjectsToDisableOnCompletion)
+            {
+                go.SetActive(false);
+            }
         }
 
         if (solved)

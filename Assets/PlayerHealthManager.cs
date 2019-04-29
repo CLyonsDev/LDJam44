@@ -34,6 +34,7 @@ public class PlayerHealthManager : MonoBehaviour
     {
         IsDead = true;
         HpCurrent.Value = 0;
+        SceneManager.LoadScene(0);
     }
 
     public void Spawn()
