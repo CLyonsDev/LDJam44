@@ -34,13 +34,16 @@ public class Interactable : MonoBehaviour
         if (PlayAudioOnInteract && (PlayMultiple == true || HasPlayed == false))
         {
             HasPlayed = true;
-            if (PlayGlobal)
+            if(ClipToPlay != null)
             {
-                AudioManager.Instance.PlayGlobalClip(ClipToPlay, Volume);
-            }
-            else
-            {
-                AudioManager.Instance.PlayPlayerClip(ClipToPlay, Volume);
+                if (PlayGlobal)
+                {
+                    AudioManager.Instance.PlayGlobalClip(ClipToPlay, Volume);
+                }
+                else
+                {
+                    AudioManager.Instance.PlayPlayerClip(ClipToPlay, Volume);
+                }
             }
 
             if (DisablesInput)

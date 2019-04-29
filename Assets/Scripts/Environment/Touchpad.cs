@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Touchpad : Interactable
 {
+    public AudioClip LockedAudioClip;
+    public AudioClip UnlockedAudioClip;
+
     public Interactable[] InteractablesToActivate;
     public bool IsLocked = false;
     public Item ItemToUnlockThis;
@@ -11,6 +14,7 @@ public class Touchpad : Interactable
 
     public override void Activate()
     {
+
         if (HasBeenActivated)
             return;
 
@@ -22,11 +26,13 @@ public class Touchpad : Interactable
             if (hasKey)
             {
                 Debug.Log("Touchpad WAS locked but is now unlocked!");
+                AudioManager.Instance.PlayGlobalClip(UnlockedAudioClip, Volume);
                 IsLocked = false;
             }
             else
             {
                 Debug.Log("Touchpad is locked");
+                AudioManager.Instance.PlayGlobalClip(LockedAudioClip, Volume);
                 return;
             }
         }
