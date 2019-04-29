@@ -8,6 +8,9 @@ public class Button_DoorUnlocker : Interactable
     public bool HasBeenUsed = false;
     public Transform otherButton;
 
+    public Transform ToHide;
+    public Transform ToShow;
+
     public override void Activate()
     {
         if (HasBeenUsed)
@@ -28,6 +31,8 @@ public class Button_DoorUnlocker : Interactable
                 door.Activate();
                 HasBeenUsed = true;
                 otherButton.GetComponent<Button_DoorUnlocker>().HasBeenUsed = true;
+                ToHide.gameObject.SetActive(false);
+                ToHide.gameObject.SetActive(true);
                 break;
             }
         }

@@ -45,7 +45,7 @@ public class ButtonPuzzle : MonoBehaviour
                     Debug.Log("Door " + DoorToUnlockOnCompletion + " unlocked.");
                     door.IsLocked = false;
                     door.Activate();
-                    door.GetComponentInChildren<Animator>().SetTrigger("Open");
+                    //door.GetComponentInChildren<Animator>().SetTrigger("Open");
                     foreach (GameObject go in GameObjectsToEnableOnCompletion)
                     {
                         go.SetActive(true);

@@ -6,6 +6,7 @@ public class ItemPickup : Interactable
 {
     public Item Item;
     private Inventory PlayerInventory;
+    public bool DestroyAfterPickup = true;
 
     //TODO: GameEvent hook for pickup.
 
@@ -20,6 +21,7 @@ public class ItemPickup : Interactable
             Debug.LogError("ItemPickup::Activate() -- PlayerInventory is null");
         }
         PlayerInventory.AddItem(Item);
-        Destroy(this.gameObject);
+        if(DestroyAfterPickup)
+            Destroy(this.gameObject);
     }
 }

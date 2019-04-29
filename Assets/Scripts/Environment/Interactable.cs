@@ -34,7 +34,7 @@ public class Interactable : MonoBehaviour
         if (PlayAudioOnInteract && (PlayMultiple == true || HasPlayed == false))
         {
             HasPlayed = true;
-            if(ClipToPlay != null)
+            if (ClipToPlay != null)
             {
                 if (PlayGlobal)
                 {
@@ -44,13 +44,14 @@ public class Interactable : MonoBehaviour
                 {
                     AudioManager.Instance.PlayPlayerClip(ClipToPlay, Volume);
                 }
-            }
 
-            if (DisablesInput)
-            {
-                CursorManager.Instance.SetCurstor(CursorManager.CursorStates.deactivated);
-                dur = ClipToPlay.length;
-                StartCoroutine(ReEnableInput());
+
+                if (DisablesInput)
+                {
+                    CursorManager.Instance.SetCurstor(CursorManager.CursorStates.deactivated);
+                    dur = ClipToPlay.length;
+                    StartCoroutine(ReEnableInput());
+                }
             }
         }
     }
@@ -62,10 +63,7 @@ public class Interactable : MonoBehaviour
 
     private IEnumerator ReEnableInput()
     {
-        while (true)
-        {
-            yield return new WaitForSeconds(dur);
-            CursorManager.Instance.SetCurstor(CursorManager.CursorStates.normal);
-        }
+        yield return new WaitForSeconds(dur);
+        CursorManager.Instance.SetCurstor(CursorManager.CursorStates.normal);
     }
 }
